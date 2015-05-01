@@ -1,0 +1,25 @@
+syntax "url" "\.ur[lin]s?$"
+
+# domain
+color brightwhite "(//|@)[^/?#]*/?"
+
+# keys
+color blue "[?&][^?&=#[:space:]]*"
+color blue "[/:][^:@/?.]*[:@]"
+
+# values
+color yellow "=[^&=#[:space:]]*"
+color yellow ":[^:@/?]*"
+
+# reserved characters
+color magenta "[?&/@:=]"
+
+# percent-encoding
+color red "%[[:xdigit:]]{2}"
+
+# scheme
+color green "^[[:space:]]*[[:alpha:]][[:alnum:]\+\-\.]*:"
+
+# fragment
+color cyan "#[^[:space:]]*$"
+

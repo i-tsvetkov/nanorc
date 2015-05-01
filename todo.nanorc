@@ -1,0 +1,20 @@
+syntax "todo" "\.[Tt][Oo][Dd][Oo]$" "[Tt][Oo][Dd][Oo]\.[Tt][Ex]?[Xx][Tt]"
+
+# task date
+color brightwhite "^([[:space:]]*\([[:upper:]]\)[[:space:]])?[[:space:]]*[[:digit:]]{4}(-[[:digit:]]{2}){2}"
+
+# priority
+color red "^[[:space:]]*\([[:upper:]]\)[[:space:]]"
+
+# context
+color blue "[[:space:]]@[^[:space:]]*"
+
+# project
+color green "[[:space:]]\+[^[:space:]]*"
+
+# complete task
+color brightblack "^[[:space:]]*x[[:space:]].*$"
+
+# complete task date
+color magenta "^[[:space:]]*x[[:space:]]+[[:digit:]]{4}(-[[:digit:]]{2}){2}"
+
