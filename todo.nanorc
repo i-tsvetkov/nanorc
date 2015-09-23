@@ -10,7 +10,7 @@ color red "^[[:space:]]*\([[:upper:]]\)[[:space:]]"
 color blue "[[:space:]]@[^[:space:]]*"
 
 # project
-color green "[[:space:]]\+[^[:space:]]*"
+color green "[[:space:]]\+[^[:space:]]+"
 
 # complete task
 color brightblack "^[[:space:]]*x[[:space:]].*$"
